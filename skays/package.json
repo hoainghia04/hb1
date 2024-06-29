@@ -1,0 +1,36 @@
+{
+	"name": "skays",
+	"description": "",
+	"version": "1.0.0",
+	"type": "module",
+	"private": true,
+	"keywords": [
+		"bot",
+		"discord",
+		"discord.js",
+		"javascript",
+		"robo",
+		"robo.js"
+	],
+	"scripts": {
+		"build": "robo build",
+		"deploy": "robo deploy",
+		"dev": "set NODE_OPTIONS=--enable-source-maps && robo dev",
+		"doctor": "sage doctor",
+		"invite": "robo invite",
+		"lint": "npm run lint:eslint && npm run lint:style",
+		"lint:eslint": "eslint . --ext js,jsx,ts,tsx",
+		"lint:style": "prettier --write .",
+		"start": "robo start",
+		"upgrade": "sage upgrade"
+	},
+	"dependencies": {
+		"discord.js": "latest",
+		"robo.js": "latest",
+		"ultrafetch": "^0.4.0"
+	},
+	"devDependencies": {
+		"eslint": "latest",
+		"prettier": "latest"
+	}
+}
